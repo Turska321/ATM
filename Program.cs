@@ -12,13 +12,13 @@ namespace ATM
             // Sets user balance to a number
             int jormaBal = 12980;           
             int petriBal = 56240;            
-            int turskaBal = 17594730;
+            int turskaBal = 175064;
             
             // Sets Password for user
 
             string jormaPass = "AwkwardOtters83";
             string petriPass = "FunnyDoge51";
-            string turskaPass = "CuteCats12";
+            string turskaPass = "DefinedNull";
 
             Console.WriteLine("Welcome! Please insert your ID number to proceed: ");
             int userId = Convert.ToInt32(Console.ReadLine());
@@ -168,7 +168,7 @@ namespace ATM
                 case 210907:
                     Console.WriteLine("Please input your password:");
                     turskaPass = Console.ReadLine();
-                    if (turskaPass != "CuteCats12")
+                    if (turskaPass != "DefinedNull")
                     {
                         Console.WriteLine("Password is incorrect try again");
                         Console.ReadKey();
@@ -226,6 +226,7 @@ namespace ATM
                                 else
                                 {
                                     Console.WriteLine("That ammount is not possible to withdraw try again.");
+                                    Console.WriteLine("Don't come back");
                                     Console.ReadKey();
                                 }
                                 break;
